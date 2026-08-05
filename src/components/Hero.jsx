@@ -1,12 +1,33 @@
-
+import { useEffect, useState } from 'react'
 import heroImage from '../assets/hero-biblioteca-legal.png'
 import { CalendarIcon, ShieldIcon, WhatsAppIcon } from './Icons.jsx'
 
 export default function Hero() {
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const image = new Image()
+
+    image.src = heroImage
+
+    if (image.complete) {
+      setLoaded(true)
+      return undefined
+    }
+
+    image.onload = () => {
+      setLoaded(true)
+    }
+
+    return () => {
+      image.onload = null
+    }
+  }, [])
+
   return (
     <main
       id="inicio"
-      className="hero"
+      className={`hero ${loaded ? 'hero--loaded' : ''}`}
       style={{ '--hero-bg': `url(${heroImage})` }}
     >
       <div className="container hero__grid">
