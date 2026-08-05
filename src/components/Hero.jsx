@@ -1,10 +1,14 @@
 
-import AnimatedScales from './AnimatedScales.jsx'
+import heroImage from '../assets/hero-fondo.png'
 import { CalendarIcon, ShieldIcon, WhatsAppIcon } from './Icons.jsx'
 
 export default function Hero() {
   return (
-    <main id="inicio" className="hero">
+    <main
+      id="inicio"
+      className="hero"
+      style={{ '--hero-bg': `url(${heroImage})` }}
+    >
       <div className="container hero__grid">
         <div className="hero__content hero-intro">
           <p className="eyebrow">Orientación preventiva y extrajudicial</p>
@@ -34,11 +38,6 @@ export default function Hero() {
             <a className="button button--outline" href="https://wa.me/56955162685" target="_blank" rel="noreferrer"><WhatsAppIcon />WhatsApp</a>
           </div>
           <p className="trust-line"><ShieldIcon />Licenciada en Ciencias Jurídicas · Atención online y presencial</p>
-        </div>
-        <div className="hero__portrait-wrap hero-portrait-intro">
-          <div className="hero__visual">
-  <AnimatedScales />
-</div>
         </div>
       </div>
     </main>
