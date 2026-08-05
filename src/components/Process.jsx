@@ -8,8 +8,8 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="proceso" className="section section--tinted">
-      <div className="container">
+    <section className="section section--tinted section--process">
+      <div id="proceso" className="container">
         <div data-reveal><p className="eyebrow eyebrow--center">Proceso</p><h2 className="section-title">Así funciona</h2></div>
         <div className="process-grid">
           {steps.map(({ Icon, title, text }, index) => (

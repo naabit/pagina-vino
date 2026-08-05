@@ -15,7 +15,11 @@ const details = [
   {
     Icon: MailIcon,
     label: 'Correo',
-    value: <a href="mailto:elenafryderup@gmail.com">elenafryderup@gmail.com</a>,
+    value: (
+      <a href="mailto:elenafryderup@gmail.com">
+        elenafryderup@<wbr />gmail.com
+      </a>
+    ),
   },
   {
     Icon: PhoneIcon,
@@ -50,8 +54,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contacto" className="section">
-      <div className="container contact-card" data-reveal>
+    <section className="section">
+      <div id="contacto" className="container contact-card" data-reveal>
         <div className="contact-content">
           <div className="contact-info">
             <p className="eyebrow">Contacto</p>

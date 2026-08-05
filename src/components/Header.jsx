@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from './Logo.jsx'
 import { CalendarIcon } from './Icons.jsx'
 
@@ -11,6 +11,20 @@ const links = [
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 24)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const closeMenu = () => {
     setOpen(false)
@@ -30,7 +44,7 @@ export default function Header() {
   }
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <div className="container header__inner">
         <Logo />
 

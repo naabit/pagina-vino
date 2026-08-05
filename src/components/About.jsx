@@ -3,8 +3,8 @@ import { ShieldIcon } from './Icons.jsx'
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="section">
-      <div className="container about-grid">
+    <section className="section">
+      <div id="sobre-mi" className="container about-grid">
         <div className="about__portrait-composition">
   <span className="about__shape about__shape--one" aria-hidden="true"></span>
   <span className="about__shape about__shape--two" aria-hidden="true"></span>

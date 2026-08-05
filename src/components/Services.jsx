@@ -9,8 +9,8 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="section section--tinted">
-      <div className="container">
+    <section className="section section--tinted section--services">
+      <div id="servicios" className="container">
         <div data-reveal>
           <p className="eyebrow eyebrow--center">Servicios</p>
           <h2 className="section-title">¿Cómo puedo ayudarte?</h2>

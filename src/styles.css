@@ -38,7 +38,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 86px;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -95,7 +95,15 @@ button {
 }
 
 .section {
-  padding-block: 96px;
+  padding-block: 72px;
+}
+
+#inicio,
+#servicios,
+#sobre-mi,
+#proceso,
+#contacto {
+  scroll-margin-top: 96px;
 }
 
 .section--tinted {
@@ -117,8 +125,8 @@ button {
     );
 }
 
-#servicios.section--tinted,
-#proceso.section--tinted {
+.section--services.section--tinted,
+.section--process.section--tinted {
   background:
     radial-gradient(
       circle at top left,
@@ -137,17 +145,17 @@ button {
     );
 }
 
-#servicios.section--tinted .section-title,
-#proceso.section--tinted .section-title,
-#servicios.section--tinted h2,
-#proceso.section--tinted h2,
-#servicios.section--tinted p:not(.service-card p):not(.process-card p),
-#proceso.section--tinted p:not(.service-card p):not(.process-card p) {
+.section--services.section--tinted .section-title,
+.section--process.section--tinted .section-title,
+.section--services.section--tinted h2,
+.section--process.section--tinted h2,
+.section--services.section--tinted p:not(.service-card p):not(.process-card p),
+.section--process.section--tinted p:not(.service-card p):not(.process-card p) {
   color: var(--white);
 }
 
-#servicios.section--tinted .eyebrow,
-#proceso.section--tinted .eyebrow {
+.section--services.section--tinted .eyebrow,
+.section--process.section--tinted .eyebrow {
   color: #e4c48a;
 }
 
@@ -216,13 +224,52 @@ p {
    ========================================================= */
 
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 50;
   border-bottom: 0;
   background: transparent;
+  transition:
+    background 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    backdrop-filter 0.28s ease;
+}
+
+.site-header--scrolled {
+  border-bottom: 1px solid rgba(183, 140, 77, 0.16);
+  background: rgba(36, 27, 22, 0.88);
+  box-shadow: 0 14px 34px rgba(22, 16, 13, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.site-header--scrolled .brand__mountain,
+.site-header--scrolled .brand__lake,
+.site-header--scrolled .brand__arc {
+  stroke: var(--gold);
+}
+
+.site-header--scrolled .brand__r,
+.site-header--scrolled .brand__e,
+.site-header--scrolled .brand__f,
+.site-header--scrolled .brand__dot {
+  fill: var(--gold);
+}
+
+.site-header--scrolled .brand__text strong,
+.site-header--scrolled .brand__text small,
+.site-header--scrolled .nav > a:not(.button) {
+  color: var(--ivory);
+}
+
+.site-header--scrolled .nav > a:not(.button)::after {
+  background: rgba(241, 232, 218, 0.88);
+}
+
+.site-header--scrolled .menu-button span {
+  background: var(--ivory);
 }
 
 .header__inner {
