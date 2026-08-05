@@ -1,5 +1,5 @@
 
-import heroImage from '../assets/hero-fondo.png'
+import heroImage from '../assets/hero-biblioteca-legal.png'
 import { CalendarIcon, ShieldIcon, WhatsAppIcon } from './Icons.jsx'
 
 export default function Hero() {

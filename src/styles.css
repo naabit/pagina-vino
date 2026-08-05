@@ -5,17 +5,17 @@
    ========================================================= */
 
 :root {
-  --navy: #0f3d3e;
-  --gold: #b89a63;
-  --gold-soft: #d7c5b2;
-  --plum: #6a2942;
-  --sand: #d7c5b2;
-  --ivory: #f2ece4;
-  --white: #fbf7f1;
-  --text: #3a2b2a;
-  --muted: #67534e;
-  --line: rgba(184, 154, 99, 0.28);
-  --shadow: 0 20px 60px rgba(58, 43, 42, 0.12);
+  --navy: #1f2d2a;
+  --gold: #b78c4d;
+  --gold-soft: #d8c1a2;
+  --plum: #6f4336;
+  --sand: #d9c6ae;
+  --ivory: #f1e8da;
+  --white: #fcf7ef;
+  --text: #34261f;
+  --muted: #6d5648;
+  --line: rgba(183, 140, 77, 0.24);
+  --shadow: 0 20px 60px rgba(52, 38, 31, 0.14);
   --font-display: "Satoshi", "DM Sans", sans-serif;
   --font-body: "DM Sans", sans-serif;
   --font-editorial: "Cormorant Garamond", "Playfair Display", Georgia, serif;
@@ -102,18 +102,18 @@ button {
   background:
     radial-gradient(
       circle at top left,
-      rgba(15, 61, 62, 0.08),
+      rgba(31, 45, 42, 0.08),
       transparent 34%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(106, 41, 66, 0.08),
+      rgba(111, 67, 54, 0.08),
       transparent 28%
     ),
     linear-gradient(
       180deg,
-      rgba(215, 197, 178, 0.42),
-      rgba(242, 236, 228, 0.78)
+      rgba(217, 198, 174, 0.48),
+      rgba(241, 232, 218, 0.82)
     );
 }
 
@@ -122,18 +122,18 @@ button {
   background:
     radial-gradient(
       circle at top left,
-      rgba(251, 247, 241, 0.08),
+      rgba(252, 247, 239, 0.08),
       transparent 30%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(184, 154, 99, 0.1),
+      rgba(183, 140, 77, 0.12),
       transparent 26%
     ),
     linear-gradient(
       180deg,
-      rgba(106, 41, 66, 0.96),
-      rgba(89, 31, 55, 0.96)
+      rgba(58, 38, 31, 0.96),
+      rgba(33, 45, 42, 0.96)
     );
 }
 
@@ -472,16 +472,16 @@ p {
   background:
     linear-gradient(
       90deg,
-      rgba(12, 33, 33, 0.88) 0%,
-      rgba(33, 20, 24, 0.66) 34%,
-      rgba(33, 20, 24, 0.26) 60%,
-      rgba(33, 20, 24, 0.12) 100%
+      rgba(24, 17, 13, 0.9) 0%,
+      rgba(50, 33, 27, 0.76) 38%,
+      rgba(50, 33, 27, 0.36) 62%,
+      rgba(50, 33, 27, 0.14) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(12, 33, 33, 0.22) 0%,
-      rgba(12, 33, 33, 0.06) 22%,
-      rgba(33, 20, 24, 0.22) 100%
+      rgba(27, 19, 15, 0.38) 0%,
+      rgba(27, 19, 15, 0.12) 24%,
+      rgba(16, 27, 25, 0.28) 100%
     ),
     var(--hero-bg) center center / cover no-repeat;
 }
@@ -1318,10 +1318,10 @@ p {
   background:
     linear-gradient(
       180deg,
-      rgba(106, 41, 66, 0.96),
-      rgba(89, 31, 55, 0.98)
+      rgba(52, 38, 31, 0.97),
+      rgba(28, 22, 18, 0.99)
     );
-  color: rgba(251, 247, 241, 0.82);
+  color: rgba(252, 247, 239, 0.82);
   font-size: 0.85rem;
 }
 
@@ -1339,7 +1339,7 @@ p {
 }
 
 .footer a {
-  color: #e4c48a;
+  color: #e0bc83;
   font-weight: 600;
   transition: color 0.2s ease;
 }
