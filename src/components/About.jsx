@@ -15,9 +15,16 @@ export default function About() {
           <span className="about__dot about__dot--three" aria-hidden="true" />
 
           <div className="about__portrait-frame">
-            <img src={elena} alt="Elena Fryderup, licenciada en Ciencias Jurídicas" />
+            <img
+              src={elena}
+              alt="Elena Fryderup, licenciada en Ciencias Jurídicas"
+              loading="lazy"
+              width="206"
+              height="206"
+            />
           </div>
         </div>
+
         <div data-reveal style={{ '--delay': '120ms' }}>
           <p className="eyebrow">Sobre mí</p>
           <h2>Elena Fryderup</h2>
@@ -28,6 +35,7 @@ export default function About() {
             antecedentes y tomar decisiones informadas antes de avanzar hacia un
             conflicto mayor.
           </p>
+
           <aside className="scope-note">
             <ShieldIcon />
             <span>

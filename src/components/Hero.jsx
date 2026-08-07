@@ -25,21 +25,27 @@ export default function Hero() {
   }, [])
 
   return (
-    <main
-      id="inicio"
-      className={`hero ${loaded ? 'hero--loaded' : ''}`}
-      style={{ '--hero-bg': `url(${heroImage})` }}
-    >
+    <main id="inicio" className={`hero ${loaded ? 'hero--loaded' : ''}`}>
+      <img
+        className="hero__background"
+        src={heroImage}
+        alt=""
+        loading="eager"
+        fetchPriority="high"
+        width="1672"
+        height="941"
+        onLoad={() => setLoaded(true)}
+      />
+
       <div className="container hero__grid">
         <div className="hero__content hero-intro">
           <p className="eyebrow">Asesoría jurídica preventiva en Pucón y online en Chile</p>
-          <h1>
-            Gestión jurídica clara y cercana.
-          </h1>
+          <h1>Gestión jurídica clara y cercana.</h1>
           <p className="hero__lead">
-              Orientación, documentos y trámites legales para personas y familias,
-  con atención presencial y online en todo Chile.
+            Orientación, documentos y trámites legales para personas y familias,
+            con atención presencial y online en todo Chile.
           </p>
+
           <div className="hero__actions">
             <a
               href="#contacto"
@@ -58,6 +64,7 @@ export default function Hero() {
               <CalendarIcon />
               Solicitar evaluación
             </a>
+
             <a
               className="button button--outline"
               href="https://wa.me/56955162685?text=Hola%20Elena%2C%20quiero%20hacer%20una%20consulta%20jur%C3%ADdica."
@@ -68,6 +75,7 @@ export default function Hero() {
               WhatsApp
             </a>
           </div>
+
           <p className="trust-line">
             <ShieldIcon />
             Licenciada en Ciencias Jurídicas · Atención online y presencial previa
