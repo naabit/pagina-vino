@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import heroImage from '../assets/hero-biblioteca-legal.png'
+import heroImage from '../assets/hero-biblioteca-legal.webp'
 import { CalendarIcon, ShieldIcon, WhatsAppIcon } from './Icons.jsx'
 
 export default function Hero() {
