@@ -6,23 +6,37 @@ export default function About() {
     <section className="section">
       <div id="sobre-mi" className="container about-grid">
         <div className="about__portrait-composition">
-  <span className="about__shape about__shape--one" aria-hidden="true"></span>
-  <span className="about__shape about__shape--two" aria-hidden="true"></span>
-  <span className="about__shape about__shape--three" aria-hidden="true"></span>
+          <span className="about__shape about__shape--one" aria-hidden="true" />
+          <span className="about__shape about__shape--two" aria-hidden="true" />
+          <span className="about__shape about__shape--three" aria-hidden="true" />
 
-  <span className="about__dot about__dot--one" aria-hidden="true"></span>
-  <span className="about__dot about__dot--two" aria-hidden="true"></span>
-  <span className="about__dot about__dot--three" aria-hidden="true"></span>
+          <span className="about__dot about__dot--one" aria-hidden="true" />
+          <span className="about__dot about__dot--two" aria-hidden="true" />
+          <span className="about__dot about__dot--three" aria-hidden="true" />
 
-  <div className="about__portrait-frame">
-    <img src={elena} alt="R. Elena Fryderup" />
-  </div>
-</div>
+          <div className="about__portrait-frame">
+            <img src={elena} alt="Elena Fryderup, licenciada en Ciencias Jurídicas" />
+          </div>
+        </div>
         <div data-reveal style={{ '--delay': '120ms' }}>
-          <p className="eyebrow">Sobre mí</p><h2>R. Elena Fryderup</h2>
+          <p className="eyebrow">Sobre mí</p>
+          <h2>Elena Fryderup</h2>
           <p className="about__role">Licenciada en Ciencias Jurídicas</p>
-          <p>Mi propósito es entregar orientación jurídica clara, ordenada y cercana, para que puedas comprender tus alternativas y tomar decisiones informadas.</p>
-          <aside className="scope-note"><ShieldIcon /> <span>No todos los conflictos necesitan llegar a juicio. Mi labor es orientarte, proteger tus intereses y preparar tu caso desde el primer momento. Si la vía judicial es necesaria, te ayudo a dar ese paso con el respaldo de un abogado especialista.</span></aside>
+          <p>
+            Entrego orientación jurídica clara, ordenada y cercana para que
+            personas y familias puedan comprender su situación, preparar
+            antecedentes y tomar decisiones informadas antes de avanzar hacia un
+            conflicto mayor.
+          </p>
+          <aside className="scope-note">
+            <ShieldIcon />
+            <span>
+              No todos los conflictos necesitan llegar a juicio. Mi labor se
+              centra en la asesoría preventiva, la gestión extrajudicial y la
+              preparación de documentos. Si la vía judicial es necesaria,
+              coordino el caso con un abogado especialista.
+            </span>
+          </aside>
         </div>
       </div>
     </section>

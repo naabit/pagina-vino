@@ -49,9 +49,7 @@ export default function Header() {
         <Logo />
 
         <button
-          className={`menu-button ${
-            open ? 'menu-button--open' : ''
-          }`}
+          className={`menu-button ${open ? 'menu-button--open' : ''}`}
           type="button"
           aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={open}
@@ -69,11 +67,7 @@ export default function Header() {
           aria-label="Navegación principal"
         >
           {links.map(([label, href]) => (
-            <a
-              href={href}
-              key={href}
-              onClick={closeMenu}
-            >
+            <a href={href} key={href} onClick={closeMenu}>
               {label}
             </a>
           ))}

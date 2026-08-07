@@ -32,33 +32,47 @@ export default function Hero() {
     >
       <div className="container hero__grid">
         <div className="hero__content hero-intro">
-          <p className="eyebrow">Orientación preventiva y extrajudicial</p>
-          <h1>Gestión jurídica clara y cercana</h1>
+          <p className="eyebrow">Asesoría jurídica preventiva en Pucón y online en Chile</p>
+          <h1>
+            Gestión jurídica clara y cercana.
+          </h1>
           <p className="hero__lead">
-            Documentos, trámites y orientación extrajudicial para personas y familias.
-            Atención online en todo Chile y presencial en Pucón con coordinación previa.
+              Orientación, documentos y trámites legales para personas y familias,
+  con atención presencial y online en todo Chile.
           </p>
           <div className="hero__actions">
-           <a
-  href="#contacto"
-  className="button"
-  onClick={(event) => {
-    if (window.innerWidth <= 700) {
-      event.preventDefault()
+            <a
+              href="#contacto"
+              className="button"
+              onClick={(event) => {
+                if (window.innerWidth <= 700) {
+                  event.preventDefault()
 
-      document.getElementById('contact-name')?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
-    }
-  }}
->
-  <CalendarIcon />
-  Agendar reunión
-</a>
-            <a className="button button--outline" href="https://wa.me/56955162685" target="_blank" rel="noreferrer"><WhatsAppIcon />WhatsApp</a>
+                  document.getElementById('contact-name')?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  })
+                }
+              }}
+            >
+              <CalendarIcon />
+              Solicitar evaluación
+            </a>
+            <a
+              className="button button--outline"
+              href="https://wa.me/56955162685?text=Hola%20Elena%2C%20quiero%20hacer%20una%20consulta%20jur%C3%ADdica."
+              target="_blank"
+              rel="noreferrer"
+            >
+              <WhatsAppIcon />
+              WhatsApp
+            </a>
           </div>
-          <p className="trust-line"><ShieldIcon />Licenciada en Ciencias Jurídicas · Atención online y presencial</p>
+          <p className="trust-line">
+            <ShieldIcon />
+            Licenciada en Ciencias Jurídicas · Atención online y presencial previa
+            coordinación
+          </p>
         </div>
       </div>
     </main>

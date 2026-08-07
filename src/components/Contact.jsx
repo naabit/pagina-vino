@@ -26,7 +26,7 @@ const details = [
     label: 'WhatsApp',
     value: (
       <a
-        href="https://wa.me/56955162685"
+        href="https://wa.me/56955162685?text=Hola%20Elena%2C%20quiero%20hacer%20una%20consulta%20jur%C3%ADdica."
         target="_blank"
         rel="noreferrer"
       >
@@ -60,10 +60,12 @@ export default function Contact() {
           <div className="contact-info">
             <p className="eyebrow">Contacto</p>
 
-            <h2>Conversemos</h2>
+            <h2>Solicita una primera evaluación</h2>
 
             <p>
-              Cuéntame brevemente tu situación para coordinar una evaluación.
+              Cuéntame brevemente tu situación para evaluar si requiere
+              orientación jurídica, revisión de documentos, una gestión
+              extrajudicial o derivación especializada.
             </p>
 
             <address className="contact-list">
@@ -127,9 +129,7 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="contact-subject">
-                ¿En qué necesitas orientación?
-              </label>
+              <label htmlFor="contact-subject">¿En qué necesitas orientación?</label>
 
               <select
                 id="contact-subject"
@@ -141,16 +141,16 @@ export default function Contact() {
                   Selecciona una opción
                 </option>
 
-                <option value="Consulta jurídica">
-                  Consulta jurídica
-                </option>
+                <option value="Consulta jurídica">Consulta jurídica</option>
 
                 <option value="Redacción o revisión de documentos">
                   Redacción o revisión de documentos
                 </option>
 
-                <option value="Orientación legal">
-                  Orientación legal
+                <option value="Orientación legal">Orientación legal</option>
+
+                <option value="Posesión efectiva o trámite extrajudicial">
+                  Posesión efectiva o trámite extrajudicial
                 </option>
 
                 <option value="Otro">Otro</option>
@@ -174,8 +174,8 @@ export default function Contact() {
             </p>
             {formSent && (
               <p className="form-success" role="status">
-                Tu mensaje fue enviado correctamente. Elena se pondrá en
-                contacto contigo.
+                Tu mensaje fue enviado correctamente. Elena se pondrá en contacto
+                contigo.
               </p>
             )}
             <button
@@ -185,8 +185,6 @@ export default function Contact() {
             >
               {isSending ? 'Enviando...' : 'Enviar consulta'}
             </button>
-
-
           </form>
         </div>
 
